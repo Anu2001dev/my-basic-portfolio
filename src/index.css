@@ -25,6 +25,8 @@ body {
   background-image: url("./images/background.svg");
   background-size: cover;
   background-repeat: no-repeat;
+  /* background-position: left top; */
+  /* position: absolute; */
   height: 100%;
   overflow: auto;
 }
@@ -77,6 +79,7 @@ div.title-container {
 span.title {
   font-size: 22px;
   font-family: Montserrat;
+  font-weight: bold;
 }
 
 span.nav-text {
@@ -92,12 +95,50 @@ img#prof-pic {
 }
 
 div.main-container {
-  /* display: flex; */
-  /* align-items: flex-end; */
-  width: 75%;
-  margin: 100px auto;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 50%;
+  /* text-align: right; */
+  margin-top: 125px;
+  font-family: Montserrat;
+  margin-left: 750px;
 }
 
 div.intro {
-  margin-left: auto;
+  display: inline-block;
+  /* text-align: left; */
+}
+
+span.main-text {
+  font-size: 35px;
+  font-weight: bold;
+  /* margin-left: auto; */
+}
+
+span.sub-text {
+  /* float: left; */
+  /* font-family: Montserrat; */
+  color: #717171;
+}
+button {
+  width: 300px;
+  height: 50px;
+  align-self: center;
+  margin-top: 100px;
+  margin-left: 150px;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  background-color: black;
+  font-family: Montserrat;
+  font-size: 16px;
+  outline: none;
+
+  /* border-width : 0; */
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }

@@ -4,16 +4,16 @@ import ProfilePic from "../images/profile pic.svg";
 
 class Navitem extends Component {
   render() {
+    const { href, text, children } = this.props;
     return (
       <li className="nav-item">
-        <a href="/" className="nav-link">
-          {this.contentOrText()}
+        <a href={href} className="nav-link">
+          {this.contentOrText(text, children)}
         </a>
       </li>
     );
   }
-  contentOrText() {
-    const { text, children } = this.props;
+  contentOrText(text, children) {
     return text ? <span className="nav-text">{text}</span> : children;
   }
 }
@@ -29,9 +29,9 @@ class Navbar extends Component {
               <span className="title">Anupama Dissanayake</span>
             </div>
           </Navitem>
-          <Navitem text="Home" />
-          <Navitem text="My Projects" />
-          <Navitem text="Contact Me" />
+          <Navitem text="Home" href="/" />
+          <Navitem text="My Projects" href="/projects" />
+          <Navitem text="Contact Me" href="/contact" />
         </ul>
       </nav>
     );
