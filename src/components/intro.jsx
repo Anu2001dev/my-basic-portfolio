@@ -11,7 +11,7 @@ class Intro extends Component {
           <span className="main-text">Hi! I am Anupama Dissanayake</span>
           <br />
           <span className="sub-text">
-            I am a programmer and a web developerer
+            I am a programmer and a web developer
             <br /> I have experience in javascript, html, css while expertising
             in python
           </span>
