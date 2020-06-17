@@ -22,6 +22,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #9cdbff;
   background-image: url("./images/background.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -41,14 +42,6 @@ nav {
 
 a {
   cursor: pointer;
-}
-
-svg.logo {
-  width: 60px;
-  height: 60px;
-  fill: rgb(90, 142, 219);
-  padding: 0 20px;
-  animation: rotate 20s infinite linear;
 }
 
 ul {
