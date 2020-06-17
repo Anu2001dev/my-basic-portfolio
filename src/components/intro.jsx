@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import { ReactComponents as Anime } from "../images/anime.svg";
+// import { ReactComponents as Anime } from "../images/anime.svg";
 
 class Intro extends Component {
   state = {};
   render() {
     return (
       <div className="main-container">
-        <Anime />
+        {/* <Anime /> */}
         <div className="intro">
           <span className="main-text">Hi! I am Anupama Dissanayake</span>
           <br />
