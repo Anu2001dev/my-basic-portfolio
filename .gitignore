@@ -2,10 +2,14 @@
 
 # dependencies
 <<<<<<< HEAD
+<<<<<<< HEAD
 /node_modules
 =======
 node_modules/
 >>>>>>> first commit in pages branch
+=======
+node_modules/
+>>>>>>> a2ef19fb095a25bbb8ce1630e7fbe7e351eb25ad
 /.pnp
 .pnp.js
 
