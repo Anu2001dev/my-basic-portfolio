@@ -1,13 +1,3 @@
-:root {
-  --display-txt: none;
-  --icon-align: center;
-  --arrow-align: center;
-  --icon-padding: 17px 0;
-  --arrow-paddding: 0;
-  --svg-size: 50px;
-  --nav-color: rgb(254, 255, 255);
-}
-
 html {
   overflow: hidden;
   height: 100%;
@@ -16,7 +6,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  /* padding: 30px 60px; */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -26,8 +15,6 @@ body {
   background-image: url("./images/background.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-position: left top; */
-  /* position: absolute; */
   height: 100%;
   overflow: auto;
 }
@@ -37,7 +24,8 @@ body {
 }
 
 nav {
-  padding: 10px 50px;
+  padding: 0 50px;
+  /* background-color: white; */
 }
 
 a {
@@ -48,20 +36,62 @@ ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-left: 10px;
+  overflow: hidden;
+  margin: 0;
 }
 
 li.nav-item {
   list-style: none;
+  padding: 10px 0;
+  transform: border 2s ease;
+  display: inline-block;
+  transition: all 0.5s;
+  height: 100%;
+}
+nav ul li {
+  display: inline-block;
+}
+
+li.nav-item:after,
+li.nav-item:before {
+  transition: all 0.5s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  /* content: "."; */
+  /* background: #aaa; */
+  height: 1px;
 }
 
 li.nav-item:first-child {
   margin-right: auto;
 }
 
+.linker:hover {
+  border-bottom: 5px solid black;
+  margin-bottom: 5px;
+}
+li.nav-item:hover:after {
+  width: 100%;
+}
+
 a.nav-link {
   text-decoration: none;
   color: black;
+  display: block;
+  padding: 15px;
+  /* color: #aaa; */
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+.active,
+span.nav-text {
+  color: black;
+  font-weight: 800px;
 }
 
 div.title-container {
@@ -92,7 +122,6 @@ div.main-container {
   align-items: flex-end;
   flex-direction: column;
   width: 50%;
-  /* text-align: right; */
   margin-top: 125px;
   font-family: Montserrat;
   margin-left: 750px;
@@ -100,18 +129,14 @@ div.main-container {
 
 div.intro {
   display: inline-block;
-  /* text-align: left; */
 }
 
 span.main-text {
   font-size: 35px;
   font-weight: bold;
-  /* margin-left: auto; */
 }
 
 span.sub-text {
-  /* float: left; */
-  /* font-family: Montserrat; */
   color: #717171;
 }
 button {
@@ -127,8 +152,6 @@ button {
   font-family: Montserrat;
   font-size: 16px;
   outline: none;
-
-  /* border-width : 0; */
 }
 
 a {

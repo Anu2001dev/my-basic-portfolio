@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import { ReactComponents as Anime } from "../images/anime.svg";
+import { ReactComponents as Anime } from "../images/anime.svg";
 
 class Intro extends Component {
   state = {};
