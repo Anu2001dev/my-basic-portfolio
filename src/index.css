@@ -48,9 +48,6 @@ li.nav-item {
   transition: all 0.5s;
   height: 100%;
 }
-nav ul li {
-  display: inline-block;
-}
 
 li.nav-item:after,
 li.nav-item:before {
@@ -61,8 +58,6 @@ li.nav-item:before {
   right: 0;
   margin: auto;
   width: 0%;
-  /* content: "."; */
-  /* background: #aaa; */
   height: 1px;
 }
 
@@ -83,7 +78,6 @@ a.nav-link {
   color: black;
   display: block;
   padding: 15px;
-  /* color: #aaa; */
   text-transform: uppercase;
   margin: 0 10px;
 }
